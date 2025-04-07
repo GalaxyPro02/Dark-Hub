@@ -1,0 +1,86 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Dark Hub",
+   Icon = 245962773, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Dark Hub",
+   LoadingSubtitle = "by GalaxyPro",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "Dark Hub", -- Folder name needs to be in quotes
+      FileName = "Dark"
+   },
+
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "darkhub", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Dark Hub",
+      Subtitle = "Key System",
+      Note = "Make Sure Join Our Discord Server!", -- Use this to tell the user how to get a key
+      FileName = "Dark Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"dark"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Main", 245962773) -- Title, Image
+local AriseCrossoverTab = Window:CreateTab("Arise Crossover", 83854172247260) -- Title, Image
+local BloxFruitsTab = Window:CreateTab("Blox Fruits", 15297055674) -- Title, Image
+local TsbTab = Window:CreateTab("The Strongest Battlegrounds", 18752860708) -- Title, Image
+local BladeBallTab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+local BladeLeagueTab = Window:CreateTab("Blade League", 4483362458) -- Title, Image
+local CTab = Window:CreateTab("Tab C", 4483362458) -- Title, Image
+local DeathBallTab = Window:CreateTab("Death Ball", 4483362458) -- Title, Image
+local DeadRailsTab = Window:CreateTab("Dead Rails", 4483362458) -- Title, Image
+local ETab = Window:CreateTab("Tab E", 4483362458) -- Title, Image
+local FTab = Window:CreateTab("Tab F", 4483362458) -- Title, Image
+local ITab = Window:CreateTab("Tab I", 4483362458) -- Title, Image
+local JTab = Window:CreateTab("Tab J", 4483362458) -- Title, Image
+local KTab = Window:CreateTab("Tab K", 4483362458) -- Title, Image
+local LTab = Window:CreateTab("Tab L", 4483362458) -- Title, Image
+local MTab = Window:CreateTab("Tab M", 4483362458) -- Title, Image
+local NTab = Window:CreateTab("Tab N", 4483362458) -- Title, Image
+local OTab = Window:CreateTab("Tab O", 4483362458) -- Title, Image
+local PTab = Window:CreateTab("Tab P", 4483362458) -- Title, Image
+local QTab = Window:CreateTab("Tab Q", 4483362458) -- Title, Image
+local RedzHubTab = Window:CreateTab("Redz Hub", 4483362458) -- Title, Image
+local STab = Window:CreateTab("Tab S", 4483362458) -- Title, Image
+local TTab = Window:CreateTab("Tab T", 4483362458) -- Title, Image
+local UTab = Window:CreateTab("Tab U", 4483362458) -- Title, Image
+local VTab = Window:CreateTab("Tab V", 4483362458) -- Title, Image
+local WTab = Window:CreateTab("Tab W", 4483362458) -- Title, Image
+local XTab = Window:CreateTab("Tab X", 4483362458) -- Title, Image
+local YTab = Window:CreateTab("Tab Y", 4483362458) -- Title, Image
+local ZTab = Window:CreateTab("Tab Z", 4483362458) -- Title, Image
+
+local DestoryButton = MainTab:CreateButton({
+   Name = "Destroy Ui",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
+
+local MainButton = MainTab:CreateButton({
+   Name = "Discord Server Link",
+   Callback = function()
+      setclipboard("https://dsc.gg/darkhub")
+   end,
+})
+
+local AriseCrossoverButton = AriseCrossoverTab:CreateButton({
+   Name = "Twvz Hub - Keyless",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua"))()
+   end,
+})
